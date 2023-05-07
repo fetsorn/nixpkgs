@@ -622,7 +622,7 @@ sub getEfiTarget {
         if (($grubTarget eq "") || ($grubTargetEfi eq "")) { die }
         else { return "both" }
     } elsif (($grub ne "") && ($grubEfi eq "")) {
-        # TODO: It would be safer to disallow non-EFI grub installation if no taget is given.
+        # TODO: It would be safer to disallow non-EFI grub installation if no target is given.
         #       If no target is given, then grub auto-detects the target which can lead to errors.
         #       E.g. it seems as if grub would auto-detect a EFI target based on the availability
         #       of a EFI partition.
